@@ -1,0 +1,226 @@
+% !TeX root = resume.tex
+%-------------------------
+% Resume in Latex
+% Author : Umair Qidwai
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://umairqidwai.com/}{\Large Umair Qidwai}} & Email : \href{mailto:umairqidwai4@gmail.com}{umairqidwai4@gmail.com}\\
+%   \href{http://umairqidwai.com/}{http://www.umairqidwai.com} & Mobile : +1-380-206-7015 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Umair Qidwai} \\ \vspace{1pt}
+    \small +1-380-206-7015 $|$ \href{mailto:umairqidwai4@gmail.com}{\underline{umairqidwai4@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/umair-qidwai}{\underline{linkedin.com/in/umair-qidwai}} $|$
+    \href{https://github.com/umairqidwai1}{\underline{github.com/umairqidwai1}} $|$
+    \href{https://umairqidwai.com/}{\underline{umairqidwai.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Ohio State University}{Columbus, OH}
+      {Bachelor of Science in Computer Science, Minor in Business}{Sept. 2024 -- May 2028}
+    \resumeSubheading
+      {Harvard University}{Online}
+      {CS50 course}{June 2025 -- Nov. 2025}
+    \resumeSubheading
+      {Google Project Management}{Online}
+      {Certificate From Coursera}{June 2023 -- Nov. 2023}
+      \resumeItemListStart
+        \resumeItem{Learned Agile \& Scrum methodologies, sprint planning, risk management, and project execution strategies}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {AI Software Engineering Intern} {May 2025 -- July 2025}
+      {EZO Solution}{Austin, TX} 
+      \resumeItemListStart
+        \resumeItem{Developed a context-aware AI chatbot using a vector database for real-time, domain-specific Q\&A}
+        \resumeItem{Developed scalable APIs with FastAPI, enabling seamless backend integration for intelligent query handling that reduced response latency by 25\%}
+        \resumeItem{Integrated lightweight HTML/CSS frontend and deployed full-stack AI solution}
+        \resumeItem{Implemented prompt optimization and embeddings-based search for higher response accuracy}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Manufacturing System Operations Co-Op}{Aug. 2025 -- Dec. 2025}
+      {American Honda Motor}{Columbus, IN} 
+      \resumeItemListStart
+        \resumeItem{Enhanced PRTG Monitoring System, optimizing alerts and dashboards, which improved uptime by 3\%}
+        \resumeItem{Improved Omnivex Moxie Server configuration to streamline real-time manufacturing displays}
+        \resumeItem{Provided ongoing support and maintenance for Honda's high-availability manufacturing line IT systems}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Full-Stack App Developer Intern}{Aug. 2024 -- Present}
+      {Cybersense}{Dublin, OH} 
+      \resumeItemListStart
+        \resumeItem{Designed a cross-platform real estate matching app integrating user preferences and Supabase auth}
+        \resumeItem{Built secure APIs in Python (FastAPI/Flask) to manage authentication, user profiles, and property queries}
+        \resumeItem{Leveraged Supabase Postgres for scalable data storage and matching algorithm logic}
+        \resumeItem{Developed frontends in React Native for Android and SwiftUI for iOS, ensuring platform-optimized user experiences}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Smart Home Automation} $|$ \emph{Embedded Systems, IoT, MQTT, Yaml, Linux}}{June 2022 -- Present}
+          \resumeItemListStart
+            \resumeItem{Converted a legacy home security system into a smart, networked solution using an Arduino and Home Assistant}
+            \resumeItem{Engineered a smart garage door opener with a microcontroller, relay, and reed switch}
+            \resumeItem{Designed a smart drawer lock system using servo motors and NFC authentication for secure access}
+            \resumeItem{Built motorized smart blinds, automated via MQTT protocol for IoT communication}
+            \resumeItem{Developed a custom smart speaker on a Raspberry Pi, leveraging Python scripts and cron jobs to automate daily prayer time reminders}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Schedule Planner} $|$ \emph{React, MYSQL, Git}}{May 2024 -- Oct. 2024}
+          \resumeItemListStart
+            \resumeItem{Built a scheduling web app for OSU students with React frontend and MySQL backend}
+            \resumeItem{Implemented advanced features: search, filtering, and prerequisite validation for optimized class scheduling}
+            \resumeItem{Collaborated with 3 peers using GitHub Projects for task management and code reviews}
+          \resumeItemListEnd  
+
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres/MySQL), JavaScript, Swift, HTML/CSS, MATLAB} \\
+     \textbf{Frameworks}{: React, React Native, SwiftUI, Node.js, Flask, JUnit, WordPress, FastAPI} \\
+     \textbf{Developer Tools}{: Git, Docker, Google Cloud Platform, VS Code, Eclipse, Linux, Supabase, Cloudflare, Nginx/Apache} \\
+     \textbf{Libraries}{: pandas, NumPy, PyTorch, TensorFlow}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
